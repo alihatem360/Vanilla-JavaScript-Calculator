@@ -11,39 +11,50 @@
 
 <body>
 
-    <table border="0" cellspacing="">
-        <tr class="tr">
-            <td >7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>-</td>
-        </tr>
-        <tr class="tr">
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>+</td>
-        </tr>
-        <tr class="tr">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>*</td>
-        </tr>
-        <tr class="tr">
-            <td>0</td>
-            <td>.</td>
-            <td>=</td>
-            <td>/</td>
-        </tr>
+    <div class="calculation">
+        <div class="calculator">
 
-        <tr class="tr">
+            <input type="text" id="display" value=" "></input>
+            <button id="clear"> clear</button>
 
-            <td>C</td>
-            <td>%</td>
-        </tr>
+            <table border="0" cellspacing="">
+                <tr class="tr">
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>-</td>
+                    <td>Sin</td>
+                </tr>
+                <tr class="tr">
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>+</td>
+                    <td>Cos</td>
+                </tr>
+                <tr class="tr">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>*</td>
+                    <td>Tan</td>
+                </tr>
+                <tr class="tr">
+                    <td>0</td>
+                    <td>/</td>
+                    <td>%</td>
+                    <td>(</td>
+                    <td>)</td>
+                </tr>
 
-    </table>
+
+
+            </table>
+            <button type="button" id="calculate">calculate</button>
+
+        </div>
+
+    </div>
 
     <script src="./script.js"></script>
 </body>
