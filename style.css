@@ -1,9 +1,11 @@
 :root {
   --main-border: 1px solid #fff;
 }
-
+* {
+  border-radius: 9px;
+}
 html {
-  background: #262728;
+  background: #393e46;
 }
 
 td {
@@ -13,6 +15,7 @@ td {
   font-size: 45px;
   text-align: center;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .calculation {
@@ -22,7 +25,7 @@ td {
 .calculator {
   width: 43%;
   position: relative;
-  transform: translate(50%, 0px);
+  transform: translate(61%, 0px);
 }
 
 table {
@@ -38,6 +41,11 @@ table {
   font-weight: bolder;
   box-shadow: 0px 0px 13px #fff;
   padding: 0 0 0px 17px;
+  border: var(--main-border);
+
+}
+#display:focus {
+  outline: none;
 }
 
 button {
@@ -46,15 +54,19 @@ button {
   margin: 15px 1px;
   font-size: 23px;
   font-weight: bolder;
-  background-color: #54e90044;
   color: #fff;
+  cursor: pointer;
 }
 
 #clear {
-  background-color: #ff000044;
+  background-color: #f94c66;
+  border: var(--main-border);
+
 }
 
 #calculate {
+  background-color: #53bf9d;
+
   width: 100%;
   margin: 16px 0px;
   border: var(--main-border);
